@@ -10,5 +10,5 @@ class SystranConfig {
    But then what is the Cleint ID for?
   */
   public function __construct(public readonly string $endpoint = "https://api-translate.systran.net",
-      public readonly array $header = array('Authorization' => 'Key 6b9632e2-d5b9-493c-a692-d71eda6e59e9')) {}
+      public readonly array $header = array('Authorization' => 'Key bf31a6fd-f202-4eef-bc0e-1236f7e33be4')) {}
 }
