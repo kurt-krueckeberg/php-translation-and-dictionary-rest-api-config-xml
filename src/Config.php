@@ -1,7 +1,8 @@
 <?php
 declare(strict_types=1);
+namespace LanguageTools;
 
-class Test {
+class Config {
 
    static SimpleXMLElement $xml;
    static bool is_loaded = false;
