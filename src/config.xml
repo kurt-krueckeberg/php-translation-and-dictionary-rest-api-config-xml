@@ -7,15 +7,22 @@
    <provider name="Microsoft" abbrev="m">
            <endpoint>https://api-nam.cognitive.microsofttranslator.com</endpoint>
            <headers>
-              <header name="Ocp-Apim-Subscription-Key">ef6e5b44c68d438c8d79cae2f8c020ba</header> 
-              <header name="Ocp-Apim-Subscription-Region">eastus2</header>
+              <header key="Ocp-Apim-Subscription-Key">ef6e5b44c68d438c8d79cae2f8c020ba</header> 
+              <header key="Ocp-Apim-Subscription-Region">eastus2</header>
            </headers>
     </provider>
     <provider name="deepl" abbrev="d">
            <endpoint>https://api-free.deepl.com/v2</endpoint>
            <headers>
-               <header name="Authorization">DeepL-Auth-Key 7482c761-0429-6c34-766e-fddd88c247f9:fx</header>
+               <header key="Authorization">DeepL-Auth-Key 7482c761-0429-6c34-766e-fddd88c247f9:fx</header>
            </headers>
+    </provider>    
+    <provider name="systran" abbrev="s">
+        <endpoint>https://api-translate.systran.net</endpoint>
+        <headers>
+            <header key='Authorization'>Key bf31a6fd-f202-4eef-bc0e-1236f7e33be4</header>'
+        </headers>
+    </provider>    
     <provider name="ibm" abbrev="i">
           <endpoint></endpoint>
           <headers>
@@ -24,6 +31,7 @@
              The username is 'apikey' and the password is your private api-key.
              Bear token is also supported and recommended for production code.
              -->
-             <header name="apikey">ApiKey-2c8264c6-168e-457a-a910-3be0f9177313</header>
+             <header key="apikey">ApiKey-2c8264c6-168e-457a-a910-3be0f9177313</header>
          </headers>
+   </provider>    
 </providers>
