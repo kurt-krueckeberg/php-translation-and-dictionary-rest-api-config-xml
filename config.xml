@@ -23,7 +23,12 @@
                <header key="Authorization">Key bf31a6fd-f202-4eef-bc0e-1236f7e33be4</header>
            </headers>
     </provider>
-
+    <provider name="Collins" abbrev ="c">
+           <endpoint>https://api.collinsdictionary.com</endpoint>
+           <headers>
+               <header key="accessKey">igRZPPW5ilBklGQrk7mtrbQwktc0Q9v0848GhQLmo07YsHhKKYzyZcCJ4pQPYuzg</header>
+           </headers>
+    </provider>
     <provider name="ibm" abbrev="i">
           <endpoint></endpoint>
           <headers>
