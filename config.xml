@@ -40,4 +40,11 @@
              <header key="apikey">ApiKey-2c8264c6-168e-457a-a910-3be0f9177313</header>
          </headers>
    </provider>
+   <provider name="pons" abbrev="p">
+          <endpoint>https://api.pons.com/v1/</endpoint>
+          <headers>
+             <header key="X-Secret">ApiKey-2c8264c6-168e-457a-a910-3be0f9177313</header>
+         </headers>
+   </provider>
+
 </providers>
