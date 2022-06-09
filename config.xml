@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <providers>
-    <provider name="leipzig" abbrev="l">
+    <provider name="leipzig" >
            <headers></headers>
            <endpoint>http://api.corpora.uni-leipzig.de/ws</endpoint> <!-- https?? -->
    </provider>
-   <provider name="Azure" abbrev="a">
+   <provider name="azure" >
            <endpoint>https://api-nam.cognitive.microsofttranslator.com</endpoint>
            <headers>
               <header key="Ocp-Apim-Subscription-Key">ef6e5b44c68d438c8d79cae2f8c020ba</header> 
               <header key="Ocp-Apim-Subscription-Region">eastus2</header>
            </headers>
     </provider>
-    <provider name="deepl" abbrev="d">
+    <provider name="deepl" >
            <endpoint>https://api-free.deepl.com/v2</endpoint>
            <headers>
                <header key="Authorization">DeepL-Auth-Key 7482c761-0429-6c34-766e-fddd88c247f9:fx</header>
            </headers>
     </provider>
-    <provider name="Systran" abbrev="s">
+    <provider name="systran" >
            <endpoint>https://api-translate.systran.net</endpoint>
            <headers>
                <header key="Authorization">Key bf31a6fd-f202-4eef-bc0e-1236f7e33be4</header>
            </headers>
     </provider>
-    <provider name="Collins" abbrev ="c">
+    <provider name="collins" abbrev ="c">
            <endpoint>https://api.collinsdictionary.com</endpoint>
            <headers>
                <header key="accessKey">igRZPPW5ilBklGQrk7mtrbQwktc0Q9v0848GhQLmo07YsHhKKYzyZcCJ4pQPYuzg</header>
            </headers>
     </provider>
-    <provider name="ibm" abbrev="i">
+    <provider name="ibm" >
           <endpoint></endpoint>
           <headers>
              <!-- 
@@ -40,10 +40,16 @@
              <header key="apikey">ApiKey-2c8264c6-168e-457a-a910-3be0f9177313</header>
          </headers>
    </provider>
-   <provider name="pons" abbrev="p">
+   <provider name="pons" >
           <endpoint>https://api.pons.com/v1/</endpoint>
           <headers>
              <header key="X-Secret">ApiKey-2c8264c6-168e-457a-a910-3be0f9177313</header>
+         </headers>
+   </provider>
+   <provider name="itranslate" >
+          <endpoint>https://dev-api.itranslate.com/translation/v2/</endpoint>
+          <headers>
+             <header key="Authorization">Bearer 6b55ae6d-c4c9-4cde-b68b-fcf791f42f33</header>
          </headers>
    </provider>
 
