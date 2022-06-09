@@ -2,14 +2,17 @@
 declare(strict_types=1);
 namespace LanguageTools;
 
+/*
+  Provides access to config.xml through static method, get_config(string provider)
+ */
 class Config {
 
-   static SimpleXMLElement $xml;
-   static bool is_loaded = false;
+   static \SimpleXMLElement $xml;
+   static bool $is_loaded = false;
 
-   static string $xpath =  "/providers/provider[@abbrev='%s']"; 
+   static string $xpath =  "/providers/provider[@name='%s']"; 
 
-   static get_config(string $provider) : array
+   static function get_config(string $name) : \SimpleXMLElement
    {
        if (self::$is_loaded == false) {
 
@@ -17,9 +20,9 @@ class Config {
             self::$is_loaded = true; 
        }
     
-       $query = sprintf(self::$xpath, $abbrev); 
+       $query = sprintf(self::$xpath, $name); 
     
-       $response = $simp->xpath($query);
+       $response = self::$xml->xpath($query);
     
        return $response[0];
    }
