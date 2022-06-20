@@ -43,7 +43,7 @@
    <provider name="pons" >
           <endpoint>https://api.pons.com/v1/</endpoint>
           <headers>
-             <header key="X-Secret">ApiKey-2c8264c6-168e-457a-a910-3be0f9177313</header>
+             <header key="X-Secret">5cd95065ab2fcd9569fce1b5e9af4eecbd817ccb54badde17d2f9f10fe0bbf2b</header>
          </headers>
    </provider>
    <provider name="itranslate" >
@@ -52,5 +52,4 @@
              <header key="Authorization">Bearer 6b55ae6d-c4c9-4cde-b68b-fcf791f42f33</header>
          </headers>
    </provider>
-
 </providers>
